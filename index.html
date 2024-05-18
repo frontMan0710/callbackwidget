@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback chat Widget</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<body>
+<div>first div</div>
+
+<script async type="module" src="./js/widget.js"></script>
+<script type="module">
+
+    import {widgetInit} from "./js/widget.js"
+
+    widgetInit({
+        organizationId: "1111111",
+        language: "en",
+    })
+
+</script>
+</body>
+</html>
