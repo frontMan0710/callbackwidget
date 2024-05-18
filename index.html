@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Callback chat Widget</title>
+    <link rel="stylesheet" href="./css/widget.css">
 </head>
 <style>
     * {
@@ -17,18 +18,22 @@
     }
 </style>
 <body>
-<div>first div</div>
 
 <script async type="module" src="./js/widget.js"></script>
 <script type="module">
 
     import {widgetInit} from "./js/widget.js"
-
+    
     widgetInit({
         organizationId: "1111111",
         language: "en",
+        iconColor: "#247274",
+        bottom: "32px",
+        right: "32px",
+        animation: false,
     })
 
 </script>
+
 </body>
 </html>
